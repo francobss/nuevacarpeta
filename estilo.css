@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: auto;
+    height: auto;
+}
+
+
+/*ACTIVAMOS GRID*/
+.contenedor {
+    display: grid;
+    grid-template-columns: 150px 400px;
+    grid-template-rows: 100px 300px 60px;
+    grid-template-areas:
+    "header header"
+    "nav section"
+    "nav footer"
+    ;
+}
+header {
+    display: flex;
+    background-color: blue;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: green;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: blueviolet;
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: red;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
